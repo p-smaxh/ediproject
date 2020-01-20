@@ -1,4 +1,6 @@
-google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {
+  'packages': ['corechart']
+});
 google.charts.setOnLoadCallback(drawChart);
 var xmlhttp = new XMLHttpRequest();
 var klucz = [47725, 170412, 175086, 629435, 162806, 160094, 158299, 233025, 163007, 157668, 158452, 171505, 129496, 234676, 200555, 190295, 165334, 168264, 190101, 734639];
