@@ -8,10 +8,14 @@ xmlhttp.onreadystatechange = function () {
     var nazwisko = zap.results[0].name['last'];
     var email = zap.results[0].email;
     var zdjecie = zap.results[0].picture.large;
+    var nat = zap.results[0].nat;
+    var dob = zap.results[0].birthday;
 
-    document.getElementById("dane").innerHTML = imie + "<br />" + nazwisko;
+    document.getElementById("dane").innerHTML = imie + " " + nazwisko;
     document.getElementById("zdjecie").src = zdjecie;
-    document.getElementById("email").innerHTML = email;
+    document.getElementById("email").innerHTML = "<br />" + email;
+    document.getElementById("nat").innerHTML = "<br />" + nat;
+    document.getElementById("dob").innerHTML = "<br />" + dob;
 
   }
 };
