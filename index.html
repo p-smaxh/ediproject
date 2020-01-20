@@ -9,9 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <script src="js/script_user.js"></script>
     <script src="js/script_recipe.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="js/script_chart1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -19,50 +22,43 @@
         <img src="https://i.imgur.com/oYnZf6Y.png">
     </div>
 
-    <nav class="navbar navbar-expand-sm navbar-snow">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="nav justify-content-center pasek">
+        <button class="btn btn-light" type="submit" onClick="window.location.reload();">Nowy przepis!</button>
+
     </nav>
 
-    <div class="container-fluid tlo" style="margin-top:0px">
+    <div class="container-fluid ">
         <div class="row">
-            <div class="col-sm-4">
-                <h2 id="dane" class="centertext">About Me</h2>
-                <div><img class="img-fluid rounded-circle center" src="" width="200px" height="200px" id="zdjecie"
-                        alt="">
+            <div class="col-sm-2 user">
+                <h1 class="centertext ">Autor przepisu</h1><br/><br/>
+                <div>
+                    <img class="rounded-circle mx-auto d-block fota" src=""  id="zdjecie" alt="">
                 </div>
-
+                <h2 id="dane" class="centertext">About Me</h2>
                 <h5 id='email' class="centertext">Photo of me:</h5>
                 <h5 id='nat' class="centertext">Nationality:</h5>
                 <h5 id='dob' class="centertext">Date of birth:</h5>
                 <hr class="d-sm-none">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-3 przepis">
+
+                <div><img src="" id="zdjecie2"></div>
+
+                <br>
+            </div>
+            <div class="col-sm-7 przepis">
                 <h2 id='danie'>TITLE HEADING</h2>
-                <h5 id='kuchnia'>Title description, Dec 7, 2017</h5>
-                <div><img src="" width="50%" height="50%" id="zdjecie2"></div>
+                <h5 id='kuchnia'></h5>
+        
                 <p id='opis'>Some text..</p>
                 <p id='przepis'>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
                     elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco.</p>
                 <br>
+                <div id="piechart"></div>
             </div>
+            
         </div>
     </div>
 
