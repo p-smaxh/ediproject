@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Website Example</title>
+  <title>Kitchen stunts</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,12 +16,15 @@
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Kitchen stunts</h1>
-  <p>EDI 2020/Smach/Caban/Bułaś</p> 
+  <h1 class="red2">Kitchen stunts</h1>
+  <p class="green">EDI 2020   Smach&Caban&Bułaś</p> 
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
@@ -29,13 +32,13 @@
   <div class="navbar-brand navbar-collapse justify-content-center" id="collapsibleNavbar">
     <ul class="navbar-nav ">
       <li class="nav-item">
-        <a class="nav-link"  href="" onClick="window.location.reload();">New recipe!</a>
+        <a class="nav-link green"  href="" onClick="window.location.reload();">New recipe!</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onClick="laduj_przepis();">Current recipe</a>
+        <a class="nav-link green" href="#" onClick="laduj_przepis();">Current recipe</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" onClick="laduj_wartosci();">Nutrition info</a>
+        <a class="nav-link green" href="#" onClick="laduj_wartosci();">Nutrition info</a>
       </li>    
     </ul>
   </div>  
@@ -70,32 +73,32 @@
   <div class="row">
     <div class="col-sm-4 autor">
     
-      <h2>Author</h2>
+      <h2 id="dane" class="red2">About me</h2>
 
       <div class="img-thumbnail fakeimgA" id="zdjecie"></div><br/>
-        <p1 id="dane" class="centertext">About Me</p1>
-        <p1 id='email' class="centertext">Photo of me:</p1>
-        <p1 id='nat' class="centertext">Nationality:</p1>
-        <p1 id='dob' class="centertext">Date of birth:</p1>
+        <p1 class="centertext red">About Me</p1>
+        <p1 id='email' class="centertext green">Photo of me:</p1>
+        <p1 id='nat' class="centertext green">Nationality:</p1>
+        <p1 id='dob' class="centertext green">Date of birth:</p1>
 <br>
     </div>
     <div class="col-sm-8">
-      <h2 id="Hrecipe">Recipe</h2>
-                <h2 id='danie'>meal</h2>
+      <h2 id="Hrecipe" class="red">Recipe</h2>
+                <h2 id='danie' class="red2">meal</h2>
       <div class="fakeimgD" id="zdjecie2"></div><br/>
 
-                <h5 id='kuchnia'>cusine</h5><br/>
+                <h5 id='kuchnia' class="red">cusine</h5><br/>
 				<div id="wykresy">
 					<div id="wykresWart"></div>
 					<div id="chartdiv"></div>
 				</div>
 				<div style="clear: both;"></div>
-                <p id='opis'>description</p>
-                <div id="przedmioty">
-                    <h5 id='skladniki'>Ingredients</h4>
-                    <ol id="listaSkl">
+                <p id='opis' class="green">description</p>
+                <div id="przedmioty" class="green">
+                    <h5 id='skladniki' class="red">Ingredients</h4>
+                    <ol id="listaSkl" class="green">
                     </ol>	
-                <p id='przepis'></p>
+                <p id='przepis' class="green"></p>
                     </div>
                 <br>
 
@@ -105,7 +108,7 @@
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>strzaly</p>
+  <p class="green">All rights reserved © 2020 Smach Caban Bułaś</p>
 </div>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -125,13 +128,13 @@
         ]);
 
         // Set chart options
-        var options = {'title':'Nutrition info for portion',
+        var options = {'title':'Nutrition info per portion',
                      'backgroundColor': '#fff',
                         'is3D': true,
-                        'height': 400,
-
+                        'height': 500,
+                        chartArea:{top:130},
                         'legend': 'none',
-                        'fontName': 'Arial',
+                        'fontName': 'Nixie One',
                         'fontSize': 20,
                         'chartArea.left':0
                        };
@@ -175,3 +178,4 @@
     </script>
 </body>
 </html>
+
