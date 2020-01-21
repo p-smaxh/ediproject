@@ -2,92 +2,46 @@ body{
     font-family: 'Rubik', sans-serif;
     height:100%
 }
-.user {
-    background-color: #43BBDE;
-    padding-top:25px;
-    width: 100%;
-    border-right:3px dashed #000000;
-    background-size: cover;
-}
-
-.przepis{
-    background-color: #8BD5E7;
-    padding-top:30px;
-
-    padding-right:10px;
-    
-}
+.fakeimgA {
+    height: 200px;
+	width:200px;
+    background: #aaa;
+	 background-size: 100% 100%;
+border-radius: 91px 0px 72px 72px;
+-moz-border-radius: 91px 0px 72px 72px;
+-webkit-border-radius: 91px 0px 72px 72px;
+border: 1px solid #000000;
+ }
+  
 #zdjecie2{
-    border-radius: 107px 0px 20px 20px;
-    -moz-border-radius: 107px 0px 20px 20px;
-    -webkit-border-radius: 107px 0px 20px 20px;
-    border: 2px solid #000000;
-    width:95%;
-    height:95%;
-
+    height: 300px;
+	width:80%;
+    background: #aaa;
+		 background-size: 100% 100%;
+	border-radius: 19px 0px 19px 19px;
+-moz-border-radius: 19px 0px 19px 19px;
+-webkit-border-radius: 19px 0px 19px 19px;
+border: 1px solid #000000;
 }
-.site-footer {
-    background: #FAFAFA;
-}
-
-
-#footer1 {
-    margin-left: 2%;
-    float: left;
-
+.autor{
+	border-right: 1px solid black;
+	
 }
 
-#footer2 {
-    margin-right: 2%;
-    float: right;
+#wykresWart{
+	display: none;
+	float:left;
+	width:50%;
 }
 
-.navbar {
-    background-color: #FAFAFA;
-    border-color: #8BD5E7;
+
+#chartdiv{
+	display: none;	
+		float:left;
+	 width:50%;
+	height: 500px;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+#wykresy{
 
-.centertext {
-    text-align: center;
-}
-
-.pasek{
-    background-color: #00A0D3;
-    padding-top:10px;
-    padding-bottom:10px;
-    border-bottom: 3px dashed #000000;
-}
-
-#danie{
-    font-size: 50px;
-    color: #131313;
-
-text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15), 0px 0px 0px rgba(212,14,30,0);
-}
-
-#kuchnia{
-    font-size: 30px;
-    color: #353535;
-}
-
-#opis{
-    font-size: 20px;
-}
-
-#przepis{
-    font-size: 14px;
-    color: #000000;
-    font-weight: bold;
-    text-shadow: #ffffff 1px 1px 1px;
-}
-.full{
-    height: 100%;
-    overflow: hidden;
 }
